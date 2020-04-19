@@ -1,0 +1,244 @@
+ul li{
+  list-style: none;
+}
+
+header{
+  color: white;
+  background-color: black;
+  font-family: serif;
+  position: fixed;
+  z-index: 10;
+  height: 80px;
+  width: 100%;
+}
+
+.headerLeft > h1{
+  line-height: 80px;
+}
+
+.headerRight ul li{
+  padding: 0 10px;
+  line-height: 80px;
+}
+
+.mainTop{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/image1.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.mainTop::after{
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 166, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mainTop__phrase{
+  font-family: serif;
+  color: white;
+  position: absolute;
+  top: 50vh;
+  left: 10vh;
+}
+
+.mainTop__phrase > h1:nth-child(2){
+  font-size: 30px;
+}
+
+.mainMiddle{
+  font-family: serif;
+}
+
+.mainMiddle h2{
+  font-size: 30px;
+}
+
+.mainMiddle__1__youtube{
+  font-size: 16px;
+}
+
+.mainMiddle__2__concept{
+  width: 300px;
+  font-size: 30px;
+}
+
+.mainMiddle__2__concept span{
+  font-size: 50px;
+}
+
+.mainMiddle__2__concept--image{
+  /* background-color: lightgray; */
+  width: 700px;
+  height: 350px;
+  position: relative;
+  text-align: center;
+}
+
+.mainMiddle__2__concept--image > img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mainMiddle__2__concept--image > img:nth-child(1){
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.mainMiddle__2__concept--image > img:nth-child(2){
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+}
+
+.mainMiddle__2__concept--image > img:nth-child(3){
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mainMiddle__3__priceList{
+  background-color: rgb(113, 23, 23);
+  color: rgb(225, 225, 16);
+  width: 300px;
+  position: relative;
+}
+
+.mainMiddle__3__priceList p{
+  font-size: 16px;
+}
+
+.mainMiddle__3__priceList--border1{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.mainMiddle__3__priceList--border1 > p{
+  border-top: 1px solid yellow;
+  margin: 0;
+  padding-bottom: 2px;
+  width: 80px;
+}
+
+.mainMiddle__3__priceList--border1 > p:nth-child(2){
+  margin-left: 5px;
+}
+
+.mainMiddle__3__priceList--border1 > p:nth-child(3){
+  margin-left: 10px;
+}
+
+.mainMiddle__3__priceList--border2{
+  position: absolute;
+  top: 5px;
+  right: 25px;
+}
+
+.mainMiddle__3__priceList--border2 > span{
+  border-right: 1px solid yellow;
+  margin: 0;
+  padding-right: 2px;
+  height: 50px;
+  display: block;
+}
+
+.mainMiddle__3__priceList--border2 > span:nth-child(2){
+  margin-top: 5px;
+}
+
+.mainMiddle__3__priceList--border2 > span:nth-child(3){
+  margin-top: 10px;
+}
+
+.mainMiddle__3__priceList--border3{
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+
+.mainMiddle__3__priceList--border3 > p{
+  border-top: 1px solid yellow;
+  margin: 0;
+  padding-bottom: 2px;
+  width: 80px;
+}
+
+.mainMiddle__3__priceList--border3 > p:nth-child(2){
+  margin-left: 5px;
+}
+
+.mainMiddle__3__priceList--border3 > p:nth-child(3){
+  margin-left: 10px;
+}
+
+.mainMiddle__3__priceList--border4{
+  position: absolute;
+  bottom: 5px;
+  left: 25px;
+}
+
+.mainMiddle__3__priceList--border4 > span{
+  border-right: 1px solid yellow;
+  margin: 0;
+  padding-right: 2px;
+  height: 50px;
+  display: block;
+}
+
+.mainMiddle__3__priceList--border4 > span:nth-child(2){
+  margin-top: 5px;
+}
+
+.mainMiddle__3__priceList--border4 > span:nth-child(3){
+  margin-top: 10px;
+}
+
+footer{
+  background-image: url("../image/image5.jpg");
+  background-size: cover;
+  color: white;
+  font-family: serif;
+}
+
+.footerContents{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.footerContents__left > p{
+  font-size: 16px;
+}
+
+.footerContents__left > i{
+  font-size: 50px;
+}
+
+.footerContents__right input{
+  font-size: 14px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.footerContents__right textarea{
+  font-size: 14px;
+  width: 300px;
+  height: 200px;
+}
+
+.footerCopyRight{
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  letter-spacing: 5px;
+  font-size: 16px;
+}
