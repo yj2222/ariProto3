@@ -3,8 +3,8 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
@@ -22,27 +22,51 @@
     <title>Ari Proto</title>
   </head>
   <body>
-    <header class="px-5 d-flex justify-content-between">
+    <header class="px-2 px-xl-5 d-flex justify-content-between">
       <div class="headerLeft">
-        
         <h1 class="m-0"><strong>M</strong>oving <strong>R</strong>ejoice <strong>T</strong>rigger</h1>
       </div>
       <div class="headerRight">
-        <ul class="d-flex m-0">
-          <li>MRTとは</li>
-          <li>メニュー</li>
-          <li>お問い合わせ</li>
+        <ul class="d-lg-flex m-0 d-none">
+          <li><a href="#aboutUs">MRTとは</a></li>
+          <li><a href="#postOf3">MRT3つの柱</a></li>
+          <li><a href="#menuList">メニュー</a></li>
+          <li><a href="#contactForm">お問い合わせ</a></li>
         </ul>
+        <div class="hamburgerMenu mt-2 d-lg-none">
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
       </div>
+
     </header>
-    <div class="mainTop">
+
+    <div class="hideMenu d-none d-lg-none"> 
+      <ul class="m-0 p-0">
+        <li class="pl-5"><a href="#aboutUs">MRTとは</a></li>
+        <li class="pl-5"><a href="#postOf3">MRT3つの柱</a></li>
+        <li class="pl-5"><a href="#menuList">メニュー</a></li>
+        <li class="pl-5"><a href="#contactForm">お問い合わせ</a></li>
+      </ul>
+    </div>
+
+    <div class="mainTop pl-5 d-none d-sm-block">
       <div class="mainTop__phrase">
-        <h1 class="m-0 font-weight-bold">あなたにはあなたの方法がある。</h1>
-        <h1 class="m-0 font-weight-bold">〜それぞれに合ったコンテンツを提供します。〜</h1>
+        <h1 class="m-0 font-weight-bold">あなたには<br>あなたの方法がある。</h1>
+        <h1 class="m-0 font-weight-bold pt-3">〜それぞれに合ったコンテンツを提供します〜</h1>
       </div>
     </div>
+
+    <div class="mainTop pl-3 d-sm-none">
+      <div class="mainTop__phrase">
+        <h1 class="m-0 font-weight-bold">あなたには<br>あなたの<br>方法がある。</h1>
+        <h1 class="m-0 font-weight-bold pt-3">〜それぞれに合った<br>コンテンツを提供します。〜</h1>
+      </div>
+    </div>
+
     <div class="mainMiddle">
-      <div class="mainMiddle__1 col-10 m-auto">
+      <div class="mainMiddle__1 col-md-10 m-auto pt-5" id="aboutUs">
         <h2 class="text-center my-5 font-weight-bold">＜MRTとは、MRTの魅力＞</h2>
         <p class="text-center m-0">
           MRTとは、<strong>人生の生きがい。</strong><br>
@@ -54,15 +78,17 @@
           <strong>結果効率的にパフォーマンスなど各自の目標に近く事ができます。</strong>
         </p>
         <div class="mainMiddle__1__youtube text-center">
-          <p class="pt-5 m-0">管理人（アーリー）の動画です↓
+          <p class="pt-5 m-0">
+            管理人（アーリー）の動画です↓
             解剖学に基づいて肩痛について解説しています。
           </p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/OXQFmX4ka4Q?start=86" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/OXQFmX4ka4Q?start=86" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-      <div class="mainMiddle__2 mt-5 text-white">
-        <h2 class="text-center pt-5 font-weight-bold">＜MRTの3つの柱＞</h2>
-        <div class="mainMiddle__2__discription col-10 m-auto pt-5">
+
+      <div class="mainMiddle__2 mt-5 pt-5 text-white" id="postOf3">
+        <h2 class="text-center pt-5 font-weight-bold">＜MRT3つの柱＞</h2>
+        <div class="mainMiddle__2__discription col-md-10 m-auto pt-5">
           <p class="text-center font-weight-bold">
             MRTには<strong>”3つの柱(コース)”</strong>があります。<br>
             基本的にはどれかを選ぶと言うよりはあなたとなりたい身体、その日の体調、目標などを相談しながらトレーニングやメンテナンス方法を決めていきます。
@@ -73,12 +99,12 @@
           <p class="m-0"><span>P</span>erformance</p>
           <p class="m-0"><span>T</span>uning</p>
           <p class="m-0"><span>P</span>otential</p>
-          <div class="mainMiddle__2__concept--circle1 mx-auto"></div>
-          <div class="mainMiddle__2__concept--circle2 mx-auto"></div>
-          <div class="mainMiddle__2__concept--circle3 mx-auto"></div>
+          <div class="mainMiddle__2__concept--circle1 mx-auto circleCommon"></div>
+          <div class="mainMiddle__2__concept--circle2 mx-auto circleCommon"></div>
+          <div class="mainMiddle__2__concept--circle3 mx-auto circleCommon"></div>
         </div>
 
-        <ul class="col-10 m-auto pb-5">
+        <ul class="col-md-10 m-auto pb-5">
           <li>
             <strong>●Tuning</strong>
             <p class="pl-3">今のあなたに合った身体を整える施術をメインに動きやすい身体に導きます。</p>
@@ -94,52 +120,51 @@
         </ul>
       </div>
 
-      <div class="mainMiddle__3">
+      <div class="mainMiddle__3 pt-5" id="menuList">
         <h2 class="text-center my-5 font-weight-bold">＜Price＞</h2>
 
-        <div class="mainMiddle__3__menu1 col-10 m-auto d-flex justify-content-between flex-wrap">
-          <div class="mainMiddle__3__menu1--item d-flex justify-content-between mb-5 font-weight-bold">
+        <div class="mainMiddle__3__menu1 col-sm-10 m-auto d-sm-flex justify-content-between flex-wrap">
+          <div class="mainMiddle__3__menu1--item d-flex justify-content-between mb-5 font-weight-bold mx-auto mx-md-0">
             <p>15分</p>
             <p>・・・・・・</p>
             <p>¥1,600</p>
           </div>
-          <div class="mainMiddle__3__menu1--item d-flex justify-content-between mb-5 font-weight-bold">
+          <div class="mainMiddle__3__menu1--item d-flex justify-content-between mb-5 font-weight-bold mx-auto mx-md-0">
             <p>30分</p>
             <p>・・・・・・</p>
             <p>¥3,300</p>
           </div>
-          <div class="mainMiddle__3__menu1--item d-flex justify-content-between mb-5 font-weight-bold">
+          <div class="mainMiddle__3__menu1--item d-flex justify-content-between mb-5 font-weight-bold mx-auto mx-md-0">
             <p>40分</p>
             <p>・・・・・・</p>
             <p>¥4,400</p>
           </div>
-          <div class="mainMiddle__3__menu1--item d-flex justify-content-between mb-5 font-weight-bold">
+          <div class="mainMiddle__3__menu1--item d-flex justify-content-between mb-5 font-weight-bold mx-auto mx-md-0">
             <p>60分</p>
             <p>・・・・・・</p>
             <p>¥6,600</p>
           </div>
         </div>
 
-        <div class="mainMiddle__3__menu2 col-10 m-auto font-weight-bold text-danger">
+        <div class="mainMiddle__3__menu2 col-md-10 font-weight-bold text-danger mx-auto text-center text-md-left">
           <p class="">★初めての方はこちら↓</p>
-          <div class="mainMiddle__3__menu2--item d-flex justify-content-between mb-5">
-            <p>初回カウンセリング(20分)</p>
-            <p>・・・</p>
-            <p>無料</p>
-          </div>
+          <!-- <div class="mainMiddle__3__menu2--item mb-5"> -->
+            <p>初回無料カウンセリング(20分)</p>
+          <!-- </div> -->
         </div>
       </div>
 
       <div class="mainMiddle__3__image mx-auto mt-5">
-        <img src="./image/image2.jpg" alt="">
-        <img src="./image/image3.jpg" alt="">
         <img src="./image/image4.jpg" alt="">
+        <img src="./image/image6.jpeg" alt="">
+        <img src="./image/image10.jpeg" alt="">
       </div>
 
     </div>
+
     <footer class="mt-5">
-      <div class="footerContents d-flex py-5">
-        <div class="footerContents__left col-6 text-center">
+      <div class="footerContents d-sm-flex py-5">
+        <div class="footerContents__left col-sm-6 text-center">
           <h3>＜Follow Us＞</h3>
           <p class="pt-3">
             SNS定期更新してます!!!<br>
@@ -148,7 +173,7 @@
           <i class="fab fa-facebook p-3"></i>
           <i class="fab fa-instagram p-3"></i>
         </div>
-        <div class="footerContents__right col-6 text-center">
+        <div class="footerContents__right col-sm-6 text-center pt-5 pt-sm-0" id="contactForm">
           <h3>＜Contact Form＞</h3>
           <form action="">
             <div class="mb-3">
