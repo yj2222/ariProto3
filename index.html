@@ -11,6 +11,7 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Optional JavaScript -->
@@ -155,12 +156,13 @@
             <p>初回無料カウンセリング(20分)</p>
           <!-- </div> -->
         </div>
-      </div>
 
-      <div class="mainMiddle__3__image mx-auto mt-5">
-        <img src="./image/image4.jpg" alt="">
-        <img src="./image/image6.jpeg" alt="">
-        <img src="./image/image10.jpeg" alt="">
+        <div class="mainMiddle__3__image mx-auto mt-5">
+          <img src="./image/image4.jpg" alt="">
+          <img src="./image/image6.jpeg" alt="">
+          <img src="./image/image10.jpeg" alt="">
+        </div>
+        
       </div>
 
     </div>
@@ -180,10 +182,13 @@
           <h3>＜Contact Form＞</h3>
           <form action="">
             <div class="mb-3">
-              <input type="text" placeholder="Email">
+              <input type="text" placeholder="name" id="contactForm__name">
+            </div>
+            <div class="mb-3">
+              <input type="text" placeholder="Email" id="contactForm__email">
             </div>
             <div>
-              <textarea name="" id="" cols="30" rows="10">
+              <textarea name="contactForm__message" id="" cols="30" rows="10" id="contactForm__message">
 ※ご予約の方は以下のFormをご使用ください。
 
 【お日にち】
@@ -207,12 +212,31 @@
             </div>
             
           </form>
+          <button id="fonmConfirmBtn">確認</button>
         </div>
       </div>
       <div class="footerCopyRight text-center">
         ©︎ 2020 xxxxx All rights reserved.
       </div>
     </footer>
+
+    <div class="formConfirmModal d-none">
+      <div class="formConfirmModal__text mx-auto mt-5 py-3 px-1 font-weight-bold">
+        <h4 class="text-center font-weight-bold">＜送信内容の確認＞</h4>
+        <p class="m-0">お名前：<span id="formConfirm__name" class="font-weight-light"></span></p>
+        <p class="m-0">Email:<span id="formConfirm__email" class="font-weight-light"></span></p>
+        <p class="m-0">お問い合わせ内容：</p>
+        <p id="formConfirm__message" class="font-weight-light"></p>
+        <div class="text-center">
+          <p class="m-0">内容に問題がない↓</p>
+          <button class="btn btn-primary mb-1 font-weight-bold">送信する</button>
+        </div>
+        <div class="text-center">
+          <p class="m-0">修正すべき箇所がある↓</p>
+          <button class="btn btn-danger font-weight-bold" id="formConfirmModal__close">ホーム画面に戻る</button>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
